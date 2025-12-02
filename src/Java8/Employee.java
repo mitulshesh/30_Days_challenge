@@ -4,9 +4,20 @@ public class Employee {
     private String name;
     private Double salary;
 
-    public Employee(String name,Double salary){
+    public String getDept() {
+        return dept;
+    }
+
+    private String dept;
+
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
+
+    public Employee(String name, Double salary, String dept){
         this.name =name;
         this.salary = salary;
+        this.dept = dept;
     }
 
     public String getName() {
@@ -30,6 +41,7 @@ public class Employee {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", salary=" + salary +
+                ", dept='" + dept + '\'' +
                 '}';
     }
 }

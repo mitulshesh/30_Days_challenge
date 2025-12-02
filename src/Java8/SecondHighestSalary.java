@@ -24,11 +24,11 @@ public class SecondHighestSalary {
 
         //refer Employee class
 
-        Employee e1 = new Employee("Pranali",200000.00);
-        Employee e2 = new Employee("Prisha",400000.00);
-        Employee e3 = new Employee("Ram",600000.00);
-        Employee e4 = new Employee("Shyam",500000.00);
-        Employee e5 = new Employee("Raju",100000.00);
+        Employee e1 = new Employee("Pranali",200000.00,"CSE");
+        Employee e2 = new Employee("Prisha",400000.00,"IT");
+        Employee e3 = new Employee("Ram",600000.00,"ECE");
+        Employee e4 = new Employee("Shyam",500000.00,"IT");
+        Employee e5 = new Employee("Raju",100000.00,"CSE");
 
         List<Employee> employeeList = new ArrayList<>();
         employeeList.add(e1);
