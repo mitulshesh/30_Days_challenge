@@ -39,7 +39,11 @@ public class BasicStreamQues {
 
         //Calculate total salary per dept
         Map<String,Double> totalSalByDept = employeeList.stream().collect(Collectors.groupingBy(Employee::getDept,Collectors.summingDouble(Employee::getSalary)));
-        System.out.println(totalSalByDept);
+        System.out.println("total sal by dept "+totalSalByDept);
+
+        //calculate the average salary per department
+        Map<String,Double> avgSalByDept = employeeList.stream().collect(Collectors.groupingBy(Employee::getDept,Collectors.averagingDouble(Employee::getSalary)));
+        System.out.println("avg sal by dept "+avgSalByDept);
 
         //Function<Employee,String> fff = Employee::getDept;
 

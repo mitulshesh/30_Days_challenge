@@ -26,6 +26,10 @@ public class Test1 {
 
     public static void main(String[] args) {
         System.out.println(new Test1().removeDuplicates("programming"));
+
+        String s = "mitul";
+        s = s.concat("pranali");
+        System.out.println(s);
     }
 
 }
