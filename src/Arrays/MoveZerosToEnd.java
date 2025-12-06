@@ -33,7 +33,7 @@ public class MoveZerosToEnd {
         //run loop from z+1 till the end and keep swapping if the number at that index is non zero
         for(int  i =z+1;i<arr.length;i++){
             if(arr[i]!=0){
-                SwapElements.swap(arr,i,z);
+                SwapElements.swapIntArray(arr,i,z);
                 z++;
             }
         }

@@ -24,7 +24,7 @@ public class DutchNationalFlag {
 
         while(mid <= end){
             if(arr[mid] == 0 ){
-                SwapElements.swap(arr,start,mid);
+                SwapElements.swapIntArray(arr,start,mid);
                 start ++;
                 mid ++;
             }
@@ -32,7 +32,7 @@ public class DutchNationalFlag {
                 mid ++;
             }else{
                 //now we know its only 2
-                SwapElements.swap(arr,mid,end);
+                SwapElements.swapIntArray(arr,mid,end);
                 end--;
             }
         }

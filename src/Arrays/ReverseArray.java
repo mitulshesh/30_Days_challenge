@@ -22,7 +22,7 @@ public class ReverseArray {
         int end = arr.length - 1;
 
         while(start < end){
-            SwapElements.swap(arr,start,end);
+            SwapElements.swapIntArray(arr,start,end);
             start++;
             end--;
         }
