@@ -27,9 +27,11 @@ public class BasicStreamQues {
         employeeList.add(e4);
         employeeList.add(e5);
 
+        //sort employee list by name
         List<Employee> sortedEmployeeListByName = employeeList.stream().sorted(Comparator.comparing(Employee::getName)).collect(Collectors.toList());
         System.out.println(sortedEmployeeListByName);
 
+        //sort employee list by salary
         List<Employee> sortedEmployeeListBySal = employeeList.stream().sorted(Comparator.comparing(Employee::getSalary).reversed()).collect(Collectors.toList());
         System.out.println(sortedEmployeeListBySal);
 
