@@ -47,7 +47,9 @@ public class BasicStreamQues {
         Map<String,Double> avgSalByDept = employeeList.stream().collect(Collectors.groupingBy(Employee::getDept,Collectors.averagingDouble(Employee::getSalary)));
         System.out.println("avg sal by dept "+avgSalByDept);
 
-        //Function<Employee,String> fff = Employee::getDept;
+        //Highest paid employee per department
+        Map<String,Optional<Employee>> highestPaidPerDept = employeeList.stream().collect(Collectors.groupingBy(Employee::getDept,Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary))));
+        System.out.println("highestPaidPerDept "+highestPaidPerDept);
 
         List<String> strList = Arrays.asList("Mitul","Pranali","Prisha");
 
